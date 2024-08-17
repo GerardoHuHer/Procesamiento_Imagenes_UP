@@ -1,7 +1,7 @@
 module Main where
 import Codec.Picture
 
--- Función que recibe el path de la imagen y devuelve su negativo
+
 imagenNegativo :: FilePath -> IO ()
 imagenNegativo path = do
     eImg <- readImage path
@@ -13,10 +13,8 @@ imagenNegativo path = do
             savePngImage "negativo.png" (ImageRGB8 negativoImg)
             putStrLn "Imagen negativa guardada como negativo.png"
 
--- Función para pasar a escala de grises una imagen
 blancoNegro :: FilePath -> IO ()
 blancoNegro path = do
-    -- Leer la imagen desde el archivo
     eImg <- readImage path
     case eImg of
         Left err -> putStrLn $ "Error: " ++ err
@@ -26,7 +24,8 @@ blancoNegro path = do
             savePngImage "blancoNegro.png" (ImageRGB8 blancoNegroImg)
             putStrLn "Imagen en blanco y negro guardada como blancoNegro.png"
 
+
 main :: IO ()
 main = do
-    imagenNegativo "/home/gd_15/Descargas/obsidian.png"
-    blancoNegro "/home/gd_15/Descargas/obsidian.png"
+    imagenNegativo "/home/gd_15/Descargas/obsidian.png" 
+    blancoNegro "/home/gd_15/Descargas/obsidian.png" 
