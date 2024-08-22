@@ -38,7 +38,9 @@ def blancoNegro(path: str) -> str:
     except:
         return "Fallo al modificar la foto."
 
-print(imagenNegativo("/home/gd_15/Descargas/obsidian.png"))
-print(blancoNegro("/home/gd_15/Descargas/obsidian.png"))
+# print(imagenNegativo("/home/gd_15/Descargas/obsidian.png"))
+# print(blancoNegro("/home/gd_15/Descargas/obsidian.png"))
+print(imagenNegativo("/home/gd_15/Descargas/colores.jpg"))
+print(blancoNegro("/home/gd_15/Descargas/colores.jpg"))
 
 
