@@ -21,7 +21,8 @@ executable HaskellProcesamiento
     main-is:          Main.hs
     other-modules:
         Tareas
-        Ejercicios
+        Segmentacion
+        TareaIluminacion
     -- other-extensions:
     build-depends:    
         base ^>=4.18.2.1,
