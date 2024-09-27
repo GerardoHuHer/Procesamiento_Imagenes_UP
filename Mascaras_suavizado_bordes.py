@@ -2,7 +2,7 @@ import cv2
 import numpy as np
 import matplotlib.pyplot as plt
 
-imagen = cv2.imread('/home/gd_15/Escritorio/Procesamiento_Imagenes_UP/fotos/frame_0001.jpg', cv2.IMREAD_GRAYSCALE)
+imagen = cv2.imread('.\\arbol.jpg', cv2.IMREAD_GRAYSCALE)
 
 suavizado = np.ones((3, 3), np.float32) / 9
 print(suavizado)
