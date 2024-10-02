@@ -26,5 +26,6 @@ def division(a: int, b: int) -> tuple:
             remainder = b - r
         return (q, r)
     
-quotient, remainder = division(10, 5)
-print(f"Cociente: {quotient} \nResiduo: {remainder}")
+if __name__ == "__main__":
+    quotient, remainder = division(10, 5)
+    print(f"Cociente: {quotient} \nResiduo: {remainder}")
