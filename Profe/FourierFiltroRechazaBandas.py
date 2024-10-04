@@ -11,7 +11,8 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 # Cargar la imagen en escala de grises
-imagen = cv2.imread('C:/Users/Eduardo/OneDrive - Grupo UniCCo/Clases UP (Licenciatura)/imagenes/flowers.jpg', cv2.IMREAD_GRAYSCALE)
+path = "D:\\Procesamiento_Imagenes_UP\\TareaMascaras\\arbol.jpg"
+imagen = cv2.imread(path, cv2.IMREAD_GRAYSCALE)
 
 # Aplicar la Transformada de Fourier
 f_transform = np.fft.fft2(imagen)

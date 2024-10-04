@@ -5,8 +5,8 @@ import matplotlib.pyplot as plt
 def fourier_pasa_altas(path: str, tam: int):
     # Leemos imagen
     img = cv2.imread(path, cv2.IMREAD_GRAYSCALE)
-    img_aux = img
     # Calculamos alto y ancho
+    
     h, w = img.shape
     # Obtenemos el centro de la imagen con una división entera
     c_x, c_y  = h // 2, w // 2
@@ -30,21 +30,19 @@ def fourier_pasa_altas(path: str, tam: int):
     f_inv_shift = np.fft.ifftshift(f_shift_filtrado)
     imagen_pasa_altas = np.abs(np.fft.ifft2(f_inv_shift))
 
-    return img_aux, imagen_pasa_altas
+    return img, imagen_pasa_altas
 
-path = "/home/gd_15/Escritorio/Procesamiento_Imagenes_UP/arbol.jpg"
-img, imagen_pasa_altas = fourier_pasa_altas(path, 30)
+path = "D:\\Procesamiento_Imagenes_UP\\TareaMascaras\\arbol.jpg"
+# path = "/home/gd_15/Escritorio/Procesamiento_Imagenes_UP/arbol.jpg"
+img, imagen_pasa_altas = fourier_pasa_altas(path, 50)
 
-#img.save("ImagenOriginal.jpg")
-#imagen_pasa_altas.save("ImagenPasaAltas.jpg")
 
 plt.subplot(1,2,1)
 plt.title("Imagen Original")
-plt.imshow(imagen_pasa_altas, cmap="gray")
+plt.imshow(img, cmap="gray")
 
 plt.subplot(1,2,2)
 plt.title("Imagen con Filtro Pasa-Altas")
-plt.imshow(img)
-# plt.imshow(imagen_pasa_altas)
+plt.imshow(imagen_pasa_altas, cmap="gray")
 
 plt.show()

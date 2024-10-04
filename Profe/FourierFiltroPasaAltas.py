@@ -11,7 +11,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 # Cargar la imagen en escala de grises
-imagen = cv2.imread('C:/Users/Eduardo/OneDrive - Grupo UniCCo/Clases UP (Licenciatura)/imagenes/onerice.png', cv2.IMREAD_GRAYSCALE)
+imagen = cv2.imread("D:\\Procesamiento_Imagenes_UP\\TareaMascaras\\arbol.jpg",  cv2.IMREAD_GRAYSCALE)
 
 
 h, w = imagen.shape

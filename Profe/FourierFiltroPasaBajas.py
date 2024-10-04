@@ -1,4 +1,4 @@
-# -*- coding: utf-8 -*-
+#'C:/Users/Eduardo/OneDrive - Grupo UniCCo/Clases UP (Licenciatura)/imagenes/onerice.png' -*- coding: utf-8 -*-
 """
 Created on Sun Sep 22 13:10:12 2024
 
@@ -10,7 +10,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 # Cargar la imagen en escala de grises
-imagen = cv2.imread('C:/Users/Eduardo/OneDrive - Grupo UniCCo/Clases UP (Licenciatura)/imagenes/onerice.png', cv2.IMREAD_GRAYSCALE)
+imagen = cv2.imread("D:\\Procesamiento_Imagenes_UP\\TareaMascaras\\arbol.jpg", cv2.IMREAD_GRAYSCALE)
 
 # Crear un filtro de paso bajo (low-pass) en el dominio frecuencial
 h, w = imagen.shape
