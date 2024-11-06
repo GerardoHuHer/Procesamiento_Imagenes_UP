@@ -30,6 +30,16 @@
   (major1) == 4 && (major2) <  18 || \
   (major1) == 4 && (major2) == 18 && (minor) <= 2)
 #endif /* MIN_VERSION_base */
+/* package friday-0.2.3.2 */
+#ifndef VERSION_friday
+#define VERSION_friday "0.2.3.2"
+#endif /* VERSION_friday */
+#ifndef MIN_VERSION_friday
+#define MIN_VERSION_friday(major1,major2,minor) (\
+  (major1) <  0 || \
+  (major1) == 0 && (major2) <  2 || \
+  (major1) == 0 && (major2) == 2 && (minor) <= 3)
+#endif /* MIN_VERSION_friday */
 
 /* tool gcc-14.2.1 */
 #ifndef TOOL_VERSION_gcc

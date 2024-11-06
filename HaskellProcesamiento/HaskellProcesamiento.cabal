@@ -23,9 +23,12 @@ executable HaskellProcesamiento
         Tareas
         Segmentacion
         TareaIluminacion
+        TryingFriday
     -- other-extensions:
     build-depends:    
         base ^>=4.18.2.1,
-        JuicyPixels
+        JuicyPixels,
+        friday
+
     hs-source-dirs:   app
     default-language: Haskell2010
